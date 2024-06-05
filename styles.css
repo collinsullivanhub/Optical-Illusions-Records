@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: #00ff00; /* Terminal green */
+    font-family: 'VT323', monospace;
+    text-align: center;
+}
+
+.cube-container {
+    perspective: 1000px;
+    margin-bottom: 50px;
+}
+
+.cube {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: spin 5s infinite linear;
+}
+
+.face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 255, 0, 0.2); /* See-through effect */
+    border: 1px solid #00ff00;
+}
+
+.front  { transform: translateZ(50px); }
+.back   { transform: rotateY(180deg) translateZ(50px); }
+.left   { transform: rotateY(-90deg) translateZ(50px); }
+.right  { transform: rotateY(90deg) translateZ(50px); }
+.top    { transform: rotateX(90deg) translateZ(50px); }
+.bottom { transform: rotateX(-90deg) translateZ(50px); }
+
+@keyframes spin {
+    from { transform: rotateX(0deg) rotateY(0deg); }
+    to { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+.content {
+    color: #00ff00;
+}
+
+h1 {
+    font-size: 4em;
+    text-shadow:
+        1px 1px 0 rgba(0, 255, 0, 0.2),
+        2px 2px 0 rgba(0, 255, 0, 0.2),
+        3px 3px 0 rgba(0, 255, 0, 0.2),
+        4px 4px 0 rgba(0, 255, 0, 0.2),
+        5px 5px 0 rgba(0, 255, 0, 0.2),
+        6px 6px 0 rgba(0, 255, 0, 0.2),
+        7px 7px 0 rgba(0, 255, 0, 0.2),
+        8px 8px 0 rgba(0, 255, 0, 0.2),
+        9px 9px 0 rgba(0, 255, 0, 0.2),
+        10px 10px 0 rgba(0, 255, 0, 0.2);
+    color: rgba(0, 255, 0, 0.2);
+}
