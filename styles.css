@@ -37,13 +37,13 @@ body {
     animation-delay: 0s;
 }
 #square2 {
-    animation-delay: 2.5s;
+    animation-delay: .5s;
 }
 #square3 {
-    animation-delay: 5s;
+    animation-delay: 1s;
 }
 #square4 {
-    animation-delay: 7.5s;
+    animation-delay: 1.5s;
 }
 
 @keyframes rotate {
@@ -81,8 +81,8 @@ p {
 
 .cool-button {
     background-color: transparent;
-    border: 2px solid #00ff00;
-    color: #00ff00;
+    border: 2px solid #d5f9fc;
+    color: #d5f9fc;
     padding: 10px 20px;
     font-size: 1.5em;
     cursor: pointer;
@@ -91,6 +91,6 @@ p {
 }
 
 .cool-button:hover {
-    background-color: #00ff00;
+    background-color: ##d5f9fc;
     color: black;
 }
