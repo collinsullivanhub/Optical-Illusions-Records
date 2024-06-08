@@ -12,7 +12,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: black;
-    color: #00ff00; /* Terminal green */
+    color: #d5f9fc; 
     font-family: 'Arab Dances', sans-serif;
     text-align: center;
 }
@@ -28,7 +28,7 @@ body {
     position: absolute;
     width: 200px;
     height: 200px;
-    border: 10px solid #00ff00;
+    border: 10px solid #d5f9fc;
     box-sizing: border-box;
     animation: rotate 10s infinite linear;
 }
@@ -37,13 +37,13 @@ body {
     animation-delay: 0s;
 }
 #square2 {
-    animation-delay: .5s;
+    animation-delay: 2.5s;
 }
 #square3 {
-    animation-delay: 1s;
+    animation-delay: 5s;
 }
 #square4 {
-    animation-delay: 1.5s;
+    animation-delay: 7.5s;
 }
 
 @keyframes rotate {
@@ -91,6 +91,6 @@ p {
 }
 
 .cool-button:hover {
-    background-color: ##d5f9fc;
+    background-color: #d5f9fc;
     color: black;
 }
