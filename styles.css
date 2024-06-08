@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Arab Dances';
+    src: url('fonts/ArabDances.ttf') format('truetype');
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -8,7 +13,7 @@ body {
     height: 100vh;
     background-color: black;
     color: #00ff00; /* Terminal green */
-    font-family: 'VT323', monospace;
+    font-family: 'Arab Dances', sans-serif;
     text-align: center;
 }
 
@@ -51,7 +56,7 @@ body {
 }
 
 .content {
-    color: #00ff00;
+    color: #93fbed;
 }
 
 h1 {
@@ -72,4 +77,20 @@ h1 {
 
 p {
     font-size: 2em;
+}
+
+.cool-button {
+    background-color: transparent;
+    border: 2px solid #00ff00;
+    color: #00ff00;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    font-family: 'Arab Dances', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cool-button:hover {
+    background-color: #00ff00;
+    color: black;
 }
