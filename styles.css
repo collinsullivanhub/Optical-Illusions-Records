@@ -57,6 +57,7 @@ body {
 
 .content {
     color: #93fbed;
+    margin-top: 50px; /* Added margin to move the content down */
 }
 
 h1 {
