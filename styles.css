@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Arab Dances';
-    src: url('fonts/Khodijah Free.otf') format('truetype');
+    font-family: 'Your Font Name';
+    src: url('fonts/YourFont.otf') format('opentype');
 }
 
 body {
@@ -10,10 +10,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Changed height to min-height for better responsiveness */
     background-color: black;
     color: #d5f9fc; 
-    font-family: 'Arab Dances', sans-serif;
+    font-family: 'Your Font Name', sans-serif;
     text-align: center;
 }
 
@@ -21,7 +21,7 @@ body {
     position: relative;
     width: 200px;
     height: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 50px; /* Increased margin for better spacing */
 }
 
 .square {
@@ -87,11 +87,43 @@ p {
     padding: 10px 20px;
     font-size: 1.5em;
     cursor: pointer;
-    font-family: 'Arab Dances', sans-serif;
+    font-family: 'Your Font Name', sans-serif;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .cool-button:hover {
     background-color: #d5f9fc;
     color: black;
+}
+
+/* Media Queries for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    .illusion-container {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .square {
+        width: 100px;
+        height: 100px;
+        border: 5px solid #d5f9fc;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .cool-button {
+        padding: 8px 15px;
+        font-size: 1em;
+    }
 }
